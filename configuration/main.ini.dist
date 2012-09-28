@@ -1,0 +1,29 @@
+[Aldu\Core\Main]
+sitename = "AlduPHP Powered"
+description = "This website is powered by AlduPHP Framework"
+administrator.model = 'Aldu\Core\Models\User'
+administrator.search.id = 1
+
+[Aldu\Core\Database]
+backends.default.uri = "mysql://username:password@hostname/database"
+
+[Aldu\Helpers\Cipher]
+salt = 'GegjenwivOsooHunRygNoyquikiccex1'
+seed = '76859309657453542496749683645'
+
+[Aldu\Core\Cache]
+enabled = 0
+
+[Aldu\Helpers\Page]
+template.base = "templates/default/"
+template.html = "index.html"
+
+[Aldu\Core\Router]
+routes.default.path = ''
+routes.default.controller = 'Aldu\Core\Home'
+routes.default.action = 'index'
+
+[Aldu\Core\Locale]
+default.id = 1
+default.name = 'en-us'
+default.title = 'English'
